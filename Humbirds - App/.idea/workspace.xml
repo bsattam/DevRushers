@@ -39,7 +39,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_4_VIrtual" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="DYEMOVQKFQJ7CADE" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -202,22 +202,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1602439247426" />
-    <state width="1491" height="595" key="GridCell.Tab.0.bottom" timestamp="1602684929787">
+    <state width="1491" height="342" key="GridCell.Tab.0.bottom" timestamp="1602694676382">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1491" height="595" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602684929787" />
-    <state width="1491" height="595" key="GridCell.Tab.0.center" timestamp="1602684929786">
+    <state width="1491" height="342" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602694676382" />
+    <state width="1491" height="342" key="GridCell.Tab.0.center" timestamp="1602694676381">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1491" height="595" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1602684929786" />
-    <state width="1491" height="595" key="GridCell.Tab.0.left" timestamp="1602684929786">
+    <state width="1491" height="342" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1602694676381" />
+    <state width="1491" height="342" key="GridCell.Tab.0.left" timestamp="1602694676381">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1491" height="595" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1602684929786" />
-    <state width="1491" height="595" key="GridCell.Tab.0.right" timestamp="1602684929786">
+    <state width="1491" height="342" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1602694676381" />
+    <state width="1491" height="342" key="GridCell.Tab.0.right" timestamp="1602694676382">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1491" height="595" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1602684929786" />
+    <state width="1491" height="342" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1602694676382" />
     <state x="555" y="55" key="SettingsEditor" timestamp="1602571754227">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -230,9 +230,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1602611754129" />
-    <state x="467" y="93" width="672" height="678" key="search.everywhere.popup" timestamp="1602609857995">
+    <state x="467" y="93" width="672" height="678" key="search.everywhere.popup" timestamp="1602693210971">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="467" y="93" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1602609857995" />
+    <state x="467" y="93" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1602693210971" />
   </component>
 </project>

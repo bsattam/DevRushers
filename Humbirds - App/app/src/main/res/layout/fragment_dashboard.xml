@@ -23,13 +23,15 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardElevation="10sp"
-        android:elevation="10sp"
+        android:layout_marginEnd="4dp"
         android:background="@color/cardview_dark_background"
+        android:elevation="60sp"
+        android:foregroundGravity="center_horizontal"
+        app:cardElevation="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.15"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="PrivateResource">
 
         <LinearLayout
@@ -41,7 +43,8 @@
                 android:layout_width="100sp"
                 android:layout_height="100sp"
                 android:layout_marginStart="10sp"
-                android:src="@drawable/iv_profile"/>
+                android:layout_marginTop="2sp"
+                android:src="@drawable/iv_profile_png" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -51,25 +54,24 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/dispName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/dispName"
-                    android:layout_weight="1"
                     android:layout_marginBottom="20sp"
-                    android:textSize="20sp"/>
+                    android:layout_weight="1"
+                    android:textSize="20sp" />
 
                 <TextView
+                    android:id="@+id/dispEmail"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/dispEmail"
                     android:layout_weight="1"
-                    android:textSize="20sp"/>
+                    android:textSize="20sp" />
 
             </LinearLayout>
 
 
         </LinearLayout>
-
     </androidx.cardview.widget.CardView>
 
     <Button
@@ -84,6 +86,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.785" />
+        app:layout_constraintVertical_bias="0.658" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
