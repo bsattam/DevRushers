@@ -2,11 +2,13 @@ package com.appdev_soumitri.humbirds.ui.dashboard;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -16,8 +18,10 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
+import com.appdev_soumitri.humbirds.LauncherActivity;
 import com.appdev_soumitri.humbirds.LoginActivity;
 import com.appdev_soumitri.humbirds.R;
+import com.appdev_soumitri.humbirds.social.SocialActivity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -31,12 +35,15 @@ import org.w3c.dom.Text;
 
 import java.util.Objects;
 
+import static android.view.View.GONE;
+
 public class DashboardFragment extends Fragment {
 
     private DashboardViewModel dashboardViewModel;
 
     private TextView dispName,dispEmail;
-    private Button btnLogout;
+    private Button btnLogout,btnSocial;
+    private ProgressBar socialBar;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
             ViewGroup container, Bundle savedInstanceState) {
@@ -46,6 +53,7 @@ public class DashboardFragment extends Fragment {
 
         dispEmail=root.findViewById(R.id.dispEmail);
         dispName=root.findViewById(R.id.dispName);
+        socialBar=root.findViewById(R.id.socialBar);
 
         final FirebaseAuth auth=FirebaseAuth.getInstance();
         final FirebaseUser currentUser = auth.getCurrentUser();
@@ -88,11 +96,29 @@ public class DashboardFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 // sign out user
+                socialBar.setVisibility(View.VISIBLE);
                 auth.signOut();
                 Toast.makeText(getContext(), "Successfully Logged out !", Toast.LENGTH_SHORT).show();
                 Log.d("Auth: ","signed out");
+                socialBar.setVisibility(View.GONE);
                 startActivity(new Intent(getContext(), LoginActivity.class));
                 requireActivity().finish();
+            }
+        });
+
+        btnSocial=root.findViewById(R.id.btnConnections);
+
+        btnSocial.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                socialBar.setVisibility(View.VISIBLE);
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        startActivity(new Intent(getContext(), SocialActivity.class));
+                        socialBar.setVisibility(GONE);
+                    }
+                }, 2000);
             }
         });
 

@@ -12,7 +12,7 @@
         android:layout_width="325sp"
         android:layout_height="55sp"
         android:gravity="center_horizontal"
-        android:text="See Connections"
+        android:text="Humbirds Social"
         android:textAlignment="center"
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -21,6 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginEnd="4dp"
@@ -87,5 +88,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.658" />
+
+    <ProgressBar
+        android:id="@+id/socialBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="75sp"
+        android:layout_height="75sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/btnConnections"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

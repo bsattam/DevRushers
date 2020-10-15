@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_vertical_margin">
+
+    <ImageView
+        android:id="@+id/track_image"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/cardview_default_elevation"
+        android:layout_width="75sp"
+        android:layout_height="75sp"
+        tools:ignore="PrivateResource" />
+    <TextView
+        android:layout_centerVertical="true"
+        android:id="@+id/track_title"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
+
+</LinearLayout>
