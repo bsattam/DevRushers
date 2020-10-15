@@ -7,17 +7,48 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment" >
 
-    <TextView
-        android:id="@+id/text_home"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <ListView
+                android:id="@+id/track_list_view"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="0dp"/>
+
+            <androidx.appcompat.widget.Toolbar
+                android:background="#333333"
+                android:id="@+id/songToolbar"
+                android:theme="@style/CardView.Dark"
+                android:layout_width="match_parent"
+                android:layout_weight="1.5"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:id="@+id/selected_track_image"
+                    android:layout_width="75sp"
+                    android:layout_height="75sp"/>
+
+                <TextView
+                    android:id="@+id/selected_track_title"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="5sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:id="@+id/player_control"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="10sp"
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"/>
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
