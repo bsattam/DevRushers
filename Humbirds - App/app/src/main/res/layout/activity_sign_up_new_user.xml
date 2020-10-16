@@ -15,12 +15,12 @@
         android:hint="email address"
         android:inputType="textEmailAddress"
         android:textIsSelectable="true"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/etPassNew"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.377"
+        app:layout_constraintHorizontal_bias="0.383"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.235" />
+        app:layout_constraintVertical_bias="0.872" />
 
     <EditText
         android:id="@+id/etPassNew"
@@ -98,24 +98,26 @@
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.453"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.634" />
+        app:layout_constraintTop_toBottomOf="@+id/gender"
+        app:layout_constraintVertical_bias="0.101" />
 
     <Button
         android:id="@+id/btnSignUpNew"
         android:layout_width="300sp"
         android:layout_height="45sp"
-        android:gravity="center_horizontal"
         android:background="#aaaaaa"
+        android:gravity="center_horizontal"
         android:padding="10sp"
         android:text="Sign Up"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.522"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.759" />
+        app:layout_constraintTop_toBottomOf="@+id/etAgeNew"
+        app:layout_constraintVertical_bias="0.197" />
 
     <TextView
         android:id="@+id/tv3"

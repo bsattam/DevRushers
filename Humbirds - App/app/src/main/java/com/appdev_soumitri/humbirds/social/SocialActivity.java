@@ -6,8 +6,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 
-import com.alelak.soundroid.Soundroid;
-import com.alelak.soundroid.models.Track;
 import com.appdev_soumitri.humbirds.R;
 import com.appdev_soumitri.humbirds.Urls;
 

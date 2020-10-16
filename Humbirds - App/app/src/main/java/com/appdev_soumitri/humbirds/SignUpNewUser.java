@@ -1,4 +1,4 @@
-package com.appdev_soumitri.humbirds;
+   package com.appdev_soumitri.humbirds;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
@@ -82,10 +82,14 @@ public class SignUpNewUser extends AppCompatActivity {
 
                 String email=etEmail.getText().toString().trim(),pass=etPass.getText().toString().trim();
                 String name=etName.getText().toString().trim();
-                int age=Integer.parseInt(etAge.getText().toString().trim());
-
-                signUpUser(email,pass,name,age,gender);
-
+                String _age = etAge.getText().toString().trim();
+                if(_age.equals("")) {
+                    etAge.setError("enter valid age");
+                    etAge.requestFocus();
+                } else {
+                    int age=Integer.parseInt(_age);
+                    signUpUser(email, pass, name, age, gender);
+                }
             }
         });
 

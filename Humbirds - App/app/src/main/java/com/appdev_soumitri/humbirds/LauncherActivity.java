@@ -10,6 +10,7 @@ import android.os.Handler;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.appdev_soumitri.humbirds.models.MusicActivity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -73,6 +74,9 @@ public class LauncherActivity extends AppCompatActivity {
                         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                         startActivity(intent);
                         finish();
+
+//                        startActivity(new Intent(LauncherActivity.this, MusicActivity.class));
+//                        finish();
 
                     }
                 }
