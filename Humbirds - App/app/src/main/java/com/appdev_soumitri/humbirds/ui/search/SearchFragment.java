@@ -30,8 +30,11 @@ public class SearchFragment extends Fragment {
 
         context=getContext();
 
+
+
         return inflater.inflate(R.layout.fragment_search, container, false);
     }
+
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {

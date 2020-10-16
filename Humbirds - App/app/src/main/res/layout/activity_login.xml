@@ -29,12 +29,12 @@
         android:ems="10"
         android:hint="enter password"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etEmailLogin"
-        app:layout_constraintVertical_bias="0.17" />
+        app:layout_constraintVertical_bias="0.446" />
 
     <TextView
         android:id="@+id/tv1"
@@ -64,17 +64,17 @@
         android:id="@+id/btnLogin"
         android:layout_width="300sp"
         android:layout_height="45sp"
-        android:gravity="center_horizontal"
         android:background="#aaaaaa"
+        android:gravity="center_horizontal"
         android:padding="10sp"
         android:text="Login"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.641" />
+        app:layout_constraintTop_toBottomOf="@+id/etEmailLogin"
+        app:layout_constraintVertical_bias="0.415" />
 
     <TextView
         android:id="@+id/signupText"
